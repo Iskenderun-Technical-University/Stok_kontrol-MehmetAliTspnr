@@ -22,10 +22,16 @@ namespace STOKKONTROL
             string kullaniciadi = "admin";
             string sifre = "1234";
             if (textBox1.Text == kullaniciadi && textBox2.Text == sifre)
-            { Form1 frm1= new Form1();  
-              frm1.Show(); 
-              this.Hide();
+            {
+                Form1 frm1 = new Form1();
+              
+                frm1.ShowDialog();
+                this.Hide();
+
             }
+            else
+            { MessageBox.Show("KULLANİCİ ADİ VEYA SİFRE HATALİ TEKRAR DENEYİNİZ!"); }
+            
 
         }
     }
