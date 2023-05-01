@@ -1,4 +1,5 @@
-﻿using System;
+﻿using STOKKONTROL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,9 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace STOKKONTROL
-{
+{ 
     public partial class Form1 : Form
     {
         public Form1()
@@ -17,7 +19,31 @@ namespace STOKKONTROL
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {  //Ürünekle
+            listBox1.Items.Add(textBox1.Text+"\t"+textBox2.Text+"\t"+textBox3.Text);
+           
+            
+
+
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Ürün sil
+            listBox1.Items.Remove(listBox1.SelectedItem);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

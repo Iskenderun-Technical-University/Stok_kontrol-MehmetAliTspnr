@@ -1,0 +1,13 @@
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\bin\Debug\STOKKONTROL.exe.config
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\bin\Debug\STOKKONTROL.exe
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\bin\Debug\STOKKONTROL.pdb
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.csproj.AssemblyReference.cache
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.csproj.SuggestedBindingRedirects.cache
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.Form1.resources
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.Properties.Resources.resources
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.csproj.GenerateResource.cache
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.csproj.CoreCompileInputs.cache
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.exe
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.pdb
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.Form2.resources
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.Form3.resources
