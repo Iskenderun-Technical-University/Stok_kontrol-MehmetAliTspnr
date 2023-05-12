@@ -40,20 +40,24 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -180,35 +184,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ÜRÜN GÜNCELLE";
             // 
-            // textBox4
+            // button5
             // 
-            this.textBox4.Location = new System.Drawing.Point(99, 33);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 0;
+            this.button5.Location = new System.Drawing.Point(99, 134);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 23);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "GÜNCELLE";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // label6
             // 
-            this.textBox5.Location = new System.Drawing.Point(99, 61);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(99, 89);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "ÜRÜN ID";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 16);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "ÜRÜN ADET";
             // 
             // label5
             // 
@@ -219,14 +211,35 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "ÜRÜN ADI";
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 16);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "ÜRÜN ADET";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 16);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "ÜRÜN ID";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(99, 89);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 22);
+            this.textBox6.TabIndex = 2;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(99, 61);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 22);
+            this.textBox5.TabIndex = 1;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(99, 33);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -240,22 +253,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "STOK SORGULA";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(56, 22);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "ÜRÜN ID İLE STOK SORGULA";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(102, 50);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 1;
-            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(102, 89);
@@ -265,20 +262,57 @@
             this.button4.Text = "SORGULA";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // textBox7
             // 
-            this.button5.Location = new System.Drawing.Point(99, 134);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 23);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "GÜNCELLE";
-            this.button5.UseVisualStyleBackColor = true;
+            this.textBox7.Location = new System.Drawing.Point(102, 50);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 22);
+            this.textBox7.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(56, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(192, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "ÜRÜN ID İLE STOK SORGULA";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button6);
+            this.groupBox4.Location = new System.Drawing.Point(402, 218);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(269, 110);
+            this.groupBox4.TabIndex = 20;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "DEPODAN ÇIKAR";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(89, 21);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(84, 69);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "DEPODAN ÇIKIŞ ";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(779, 229);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(118, 89);
+            this.button7.TabIndex = 21;
+            this.button7.Text = "DETAYLI STOK SORGU";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1046, 634);
+            this.ClientSize = new System.Drawing.Size(1066, 537);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button3);
@@ -292,6 +326,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -321,6 +356,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 
