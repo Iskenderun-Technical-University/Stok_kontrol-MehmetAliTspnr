@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,7 @@ namespace STOKKONTROL
         private void button1_Click(object sender, EventArgs e)
         {  //Ürünekle
             listBox1.Items.Add(textBox1.Text+"\t"+textBox2.Text+"\t"+textBox3.Text);
-           
+            
             
 
 
@@ -55,7 +56,28 @@ namespace STOKKONTROL
 
 
         }
-        
+        private void button7_Click(object sender, EventArgs e)
+        {  //Sql Baglantısı finally de donma engellendi.
+            SqlConnection baglanti=null;
+            try
+            {
+                baglanti = new SqlConnection(@"Data Source=DESKTOP-IL1L0EI\SQLEXPRESS;Initial Catalog=Dbstokkontrol;Integrated Security=True");
+                baglanti.Open();
+                SqlCommand sqlKomut = new SqlCommand("SELECT Urunİd,UrunAdi,UrunAdet FROM Table_Stok_Kontrol",baglanti);
+                SqlDataReader sqlDR=sqlKomut.ExecuteReader();
+                while (sqlDR.Read())
+                {
+                    string id = sqlDR[0].ToString();
+                    string ad = sqlDR[1].ToString();
+                    string adet = sqlDR[2].ToString();
+                    richTextBox1.Text = richTextBox1.Text + id + " " + ad + " " + adet +"\n";
+                }
+            } 
+            catch(Exception ex)
+            { MessageBox.Show("sql query sırasında hata olustu!"+ex.ToString()); }
+            finally { if(baglanti!=null)
+                 baglanti.Close(); }
+        }
     }
    
 }
