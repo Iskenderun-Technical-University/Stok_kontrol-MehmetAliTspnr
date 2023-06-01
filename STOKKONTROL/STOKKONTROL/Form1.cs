@@ -16,7 +16,7 @@ namespace STOKKONTROL
     public partial class Form1 : Form
     {
         public Form1()
-        {
+        {  
             InitializeComponent();
         }
 
@@ -29,8 +29,17 @@ namespace STOKKONTROL
 
         private void button1_Click(object sender, EventArgs e)
         {  //Ürünekle
-            listBox1.Items.Add(textBox1.Text+"\t"+textBox2.Text+"\t"+textBox3.Text);
+          
+
+         
+            string isim = textBox2.Text;
+            int adet= Convert.ToInt32(textBox3.Text);
+            // int sorgu1 = Convert.ToInt32(textBox1.Text);
             
+            listBox1.Items.Add(textBox1.Text+"\t"+textBox2.Text+"\t"+textBox3.Text);
+
+            
+           
             
 
 
@@ -42,6 +51,7 @@ namespace STOKKONTROL
         {
             //Ürün sil
             listBox1.Items.Remove(listBox1.SelectedItem);
+            MessageBox.Show("Ürün Silindi!");
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -77,6 +87,26 @@ namespace STOKKONTROL
             { MessageBox.Show("sql query sırasında hata olustu!"+ex.ToString()); }
             finally { if(baglanti!=null)
                  baglanti.Close(); }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //güncelle
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //id ile stok sorgula
+            
+            int sorgu7=Convert.ToInt32(textBox7.Text);
+            int id=Convert.ToInt32(textBox1.Text);
+            if (sorgu7 == Convert.ToInt32(textBox1.Text))
+            { MessageBox.Show("AYNI İD İLE ÜRÜN KAYITLIDIR!"+"\n"+"Ürün Adı= "+textBox2.Text+"\n"+ "Stok Miktarı=  "+textBox3.Text); }
+                
+
+            
+
         }
     }
    
