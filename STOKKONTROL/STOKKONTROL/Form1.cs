@@ -105,34 +105,29 @@ namespace STOKKONTROL
 
 
         }
+        SqlConnection baglanti2 = new SqlConnection(@"Data Source=DESKTOP-IL1L0EI\SQLEXPRESS;Initial Catalog=Dbstokkontrol;Integrated Security=True");
+       // public void verilerigöster(string veriler)
+        //{   
+         //   SqlDataAdapter da = new SqlDataAdapter(veriler, baglanti2);
+         //   DataSet ds=new DataSet();
+         //   da.Fill(ds);
+         //   dataGridView1.DataSource = ds.Tables[0];
+
+        //}
         private void button7_Click(object sender, EventArgs e)
-        {  //Sql Baglantısı finally de donma engellendi.
-            SqlConnection baglanti=null;
-            try
-            {
-                baglanti = new SqlConnection(@"Data Source=DESKTOP-IL1L0EI\SQLEXPRESS;Initial Catalog=Dbstokkontrol;Integrated Security=True");
-                baglanti.Open();
-                SqlCommand sqlKomut = new SqlCommand("SELECT Urunİd,UrunAdi,UrunAdet,UrunFiyat FROM Table_Stok_Kontrol",baglanti);
-                SqlDataReader sqlDR=sqlKomut.ExecuteReader();
-                while (sqlDR.Read())
-                {
-                    string id = sqlDR[0].ToString();
-                    string ad = sqlDR[1].ToString();
-                    string adet = sqlDR[2].ToString();
-                    string fiyat = sqlDR[3].ToString();
-                    richTextBox1.Text = richTextBox1.Text + id + " " + ad + " " + adet +" "+fiyat+"\n";
-                }
-            } 
-            catch(Exception ex)
-            { MessageBox.Show("sql query sırasında hata olustu!"+ex.ToString()); }
-            finally { if(baglanti!=null)
-                 baglanti.Close(); }
+        //detaylı stok sorgu
+        {   
+            Form2 f2 = new Form2();
+            f2.Show();
+            
+           // verilerigöster("Select*From Table_Stok_Kontrol");
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {
-            //güncelle
-            
+        {//güncelle
+            Form5 f5 = new Form5();
+            f5.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -146,6 +141,22 @@ namespace STOKKONTROL
                 
 
             
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-IL1L0EI\SQLEXPRESS;Initial Catalog=Dbstokkontrol;Integrated Security=True");
+            baglanti.Open();
+            SqlCommand komutsil = new SqlCommand("delete from Table_Stok_Kontrol where Urunİd=@Urunİd", baglanti);
+            komutsil.Parameters.AddWithValue("@Urunİd", listBox1.Text);
+            komutsil.ExecuteNonQuery();
+            MessageBox.Show("DEPODAN ÇIKIŞ YAPILDI!"+baglanti);
+            baglanti.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -59,12 +59,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 70);
+            this.label2.Location = new System.Drawing.Point(15, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 16);
             this.label2.TabIndex = 1;
@@ -87,7 +88,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(33, 163);
+            this.button1.Location = new System.Drawing.Point(27, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 35);
             this.button1.TabIndex = 8;
@@ -97,7 +98,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(215, 163);
+            this.button2.Location = new System.Drawing.Point(215, 181);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 35);
             this.button2.TabIndex = 9;
@@ -107,14 +108,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 30);
+            this.textBox1.Location = new System.Drawing.Point(115, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(111, 22);
             this.textBox1.TabIndex = 13;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 67);
+            this.textBox2.Location = new System.Drawing.Point(115, 67);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(111, 22);
             this.textBox2.TabIndex = 14;
@@ -142,15 +143,15 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(30, 141);
+            this.label11.Location = new System.Drawing.Point(6, 125);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 16);
+            this.label11.Size = new System.Drawing.Size(94, 16);
             this.label11.TabIndex = 20;
-            this.label11.Text = "fiyat";
+            this.label11.Text = "ÜRÜN FİYATI:";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(96, 135);
+            this.textBox8.Location = new System.Drawing.Point(115, 122);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(111, 22);
             this.textBox8.TabIndex = 19;
@@ -158,7 +159,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 110);
+            this.label3.Location = new System.Drawing.Point(6, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 16);
             this.label3.TabIndex = 18;
@@ -166,7 +167,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(96, 107);
+            this.textBox3.Location = new System.Drawing.Point(115, 95);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(111, 22);
             this.textBox3.TabIndex = 17;
@@ -175,7 +176,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 307);
+            this.listBox1.Location = new System.Drawing.Point(12, 313);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(384, 132);
             this.listBox1.TabIndex = 16;
@@ -185,9 +186,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.ImageKey = "(yok)";
-            this.button3.Location = new System.Drawing.Point(886, 481);
+            this.button3.Location = new System.Drawing.Point(483, 451);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 56);
+            this.button3.Size = new System.Drawing.Size(118, 73);
             this.button3.TabIndex = 17;
             this.button3.Text = "ÇIKIŞ YAP";
             this.button3.UseVisualStyleBackColor = false;
@@ -272,7 +273,7 @@
             this.groupBox3.Controls.Add(this.button4);
             this.groupBox3.Controls.Add(this.textBox7);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Location = new System.Drawing.Point(677, 21);
+            this.groupBox3.Location = new System.Drawing.Point(718, 313);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(308, 173);
             this.groupBox3.TabIndex = 19;
@@ -317,16 +318,17 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(89, 21);
+            this.button6.Location = new System.Drawing.Point(99, 21);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(98, 69);
             this.button6.TabIndex = 0;
             this.button6.Text = "DEPODAN ÇIKIŞ ";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(779, 229);
+            this.button7.Location = new System.Drawing.Point(483, 347);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(118, 89);
             this.button7.TabIndex = 21;
@@ -337,54 +339,56 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(39, 285);
+            this.label8.Location = new System.Drawing.Point(18, 285);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 16);
+            this.label8.Size = new System.Drawing.Size(20, 16);
             this.label8.TabIndex = 22;
-            this.label8.Text = "label8";
+            this.label8.Text = "İD";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(131, 285);
+            this.label9.Location = new System.Drawing.Point(44, 285);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.Size = new System.Drawing.Size(72, 16);
             this.label9.TabIndex = 23;
-            this.label9.Text = "label9";
+            this.label9.Text = "ÜRÜN ADI";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(209, 285);
+            this.label10.Location = new System.Drawing.Point(137, 285);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 16);
+            this.label10.Size = new System.Drawing.Size(44, 16);
             this.label10.TabIndex = 24;
-            this.label10.Text = "label10";
+            this.label10.Text = "ADET";
             // 
-            // richTextBox1
+            // label12
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(411, 369);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(174, 93);
-            this.richTextBox1.TabIndex = 25;
-            this.richTextBox1.Text = "";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(209, 285);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(45, 16);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "FİYAT";
             // 
-            // listBox2
+            // pictureBox1
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(658, 333);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(376, 148);
-            this.listBox2.TabIndex = 26;
+            this.pictureBox1.Image = global::STOKKONTROL.Properties.Resources.depo_cesitleri_nelerdir;
+            this.pictureBox1.Location = new System.Drawing.Point(708, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(349, 272);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 537);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(1069, 558);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -397,6 +401,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "ana form";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -404,6 +409,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,10 +446,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
