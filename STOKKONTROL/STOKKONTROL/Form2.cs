@@ -32,14 +32,23 @@ namespace STOKKONTROL
 
             verilerigöster("Select*From Table_Stok_Kontrol");
         }
-       
-        
-        
-        
-       
         private void btnİslem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-IL1L0EI\SQLEXPRESS;Initial Catalog=Dbstokkontrol;Integrated Security=True");
+            SqlCommandBuilder commandBuilder;
+            SqlDataAdapter adtr;
+
+            //  baglanti.Open();
+            // SqlCommand komutsil = new SqlCommand("delete from Table_Stok_Kontrol where Urunİd=@Urunİd", baglanti);
+            komutsil.Parameters.AddWithValue("@Urunİd", dataGridView1.Text);
+            //komutsil.ExecuteNonQuery();
+            //MessageBox.Show("Ürün Silindi");
+            //baglanti.Close();
         }
     }
 }

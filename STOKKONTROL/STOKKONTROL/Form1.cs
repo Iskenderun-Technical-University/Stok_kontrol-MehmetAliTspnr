@@ -37,19 +37,15 @@ namespace STOKKONTROL
             {
                 if (baglanti.State == ConnectionState.Closed)
                     baglanti.Open();
-                // Bağlantımızı kontrol ediyoruz, eğer kapalıysa açıyoruz.
+                // Bağlantı kontrolü ve açılması.
                 string kayit = "insert into Table_Stok_Kontrol(Urunid,UrunAdi,UrunAdet,UrunFiyat) values (@Urunİd,@UrunAdi,@UrunAdet,@UrunFiyat)";
-                // müşteriler tablomuzun ilgili alanlarına kayıt ekleme işlemini gerçekleştirecek sorgumuz.
+                //ilgili yere kayıt
                 SqlCommand ekle = new SqlCommand(kayit, baglanti);
-                //Sorgumuzu ve baglantimizi parametre olarak alan bir SqlCommand nesnesi oluşturuyoruz.
                 ekle.Parameters.AddWithValue("@Urunİd", textBox1.Text);
                 ekle.Parameters.AddWithValue("@UrunAdi", textBox2.Text);
                 ekle.Parameters.AddWithValue("@UrunAdet", textBox3.Text);
                 ekle.Parameters.AddWithValue("@UrunFiyat", textBox8.Text);
-
-                //Parametrelerimize Form üzerinde ki kontrollerden girilen verileri aktarıyoruz.
                 ekle.ExecuteNonQuery();
-                //Veritabanında değişiklik yapacak komut işlemi bu satırda gerçekleşiyor.
                 baglanti.Close();
                 listBox1.Items.Add(textBox1.Text + "\t" + textBox2.Text + "\t" + textBox3.Text + "\t" + textBox8.Text);
                 MessageBox.Show("Ürün Kayıt İşlemi Gerçekleşti!");
@@ -76,18 +72,11 @@ namespace STOKKONTROL
             //SqlCommand kayitsil = new SqlCommand("Delete From Table_Stok_Kontrol WHERE id=(" + id + ")", baglanti);
             // kayitsil.ExecuteNonQuery();
             //string silmeSorgusu = "DELETE from Table_Stok_Kontrol where @Urunİd";
-            //musterino parametresine bağlı olarak müşteri kaydını silen sql sorgusu
             //SqlCommand silKomutu = new SqlCommand(silmeSorgusu, baglanti);
            // silKomutu.Parameters.AddWithValue("@Urunİd", textBox1.Text);
            // silKomutu.ExecuteNonQuery();
            // MessageBox.Show("Kayıt Silindi...");
             // baglanti.Close() ;
-
-
-
-
-
-
             //Ürün sil
             //listBox1.Items.Remove(listBox1.SelectedItem);
            // MessageBox.Show("Ürün Silindi!");
@@ -128,20 +117,19 @@ namespace STOKKONTROL
         {//güncelle
             Form5 f5 = new Form5();
             f5.Show();
-        }
+           
+
+       }
+    
 
         private void button4_Click(object sender, EventArgs e)
         {
             //id ile stok sorgula
-            
-            int sorgu7=Convert.ToInt32(textBox7.Text);
-            int id=Convert.ToInt32(textBox1.Text);
-            if (sorgu7 == Convert.ToInt32(textBox1.Text))
-            { MessageBox.Show("AYNI İD İLE ÜRÜN KAYITLIDIR!"+"\n"+"Ürün Adı= "+textBox2.Text+"\n"+ "Stok Miktarı=  "+textBox3.Text); }
-                
 
-            
-
+           // int sorgu7=Convert.ToInt32(textBox7.Text);
+           // int id=Convert.ToInt32(textBox1.Text);
+          //  if (sorgu7 == Convert.ToInt32(textBox1.Text))
+          //  { MessageBox.Show("AYNI İD İLE ÜRÜN KAYITLIDIR!"+"\n"+"Ürün Adı= "+textBox2.Text+"\n"+ "Stok Miktarı=  "+textBox3.Text); }
         }
 
         private void button6_Click(object sender, EventArgs e)

@@ -14,3 +14,4 @@ C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKON
 C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\bin\Debug\DocumentFormat.OpenXml.dll
 C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.csproj.CopyComplete
+C:\Users\temse\OneDrive\Belgeler\Stok_kontrol-MehmetAliTspnr\STOKKONTROL\STOKKONTROL\obj\Debug\STOKKONTROL.Form5.resources
