@@ -42,6 +42,8 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,8 +63,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -178,7 +178,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 313);
+            this.listBox1.Location = new System.Drawing.Point(12, 310);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(384, 132);
             this.listBox1.TabIndex = 16;
@@ -188,9 +188,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.ImageKey = "(yok)";
-            this.button3.Location = new System.Drawing.Point(483, 451);
+            this.button3.Location = new System.Drawing.Point(470, 340);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 73);
+            this.button3.Size = new System.Drawing.Size(166, 89);
             this.button3.TabIndex = 17;
             this.button3.Text = "ÇIKIŞ YAP";
             this.button3.UseVisualStyleBackColor = false;
@@ -207,12 +207,28 @@
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Location = new System.Drawing.Point(402, 21);
+            this.groupBox2.Location = new System.Drawing.Point(1059, 301);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(269, 173);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ÜRÜN GÜNCELLE";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(31, 125);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 16);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "Fiyat";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(99, 116);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 22);
+            this.textBox9.TabIndex = 8;
             // 
             // button5
             // 
@@ -313,7 +329,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.button6);
-            this.groupBox4.Location = new System.Drawing.Point(402, 218);
+            this.groupBox4.Location = new System.Drawing.Point(402, 28);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(269, 110);
             this.groupBox4.TabIndex = 20;
@@ -322,7 +338,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(99, 21);
+            this.button6.Location = new System.Drawing.Point(92, 24);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(98, 69);
             this.button6.TabIndex = 0;
@@ -332,7 +348,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(483, 347);
+            this.button7.Location = new System.Drawing.Point(494, 163);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(118, 89);
             this.button7.TabIndex = 21;
@@ -379,28 +395,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::STOKKONTROL.Properties.Resources.depo_cesitleri_nelerdir;
-            this.pictureBox1.Location = new System.Drawing.Point(708, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(677, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(349, 272);
+            this.pictureBox1.Size = new System.Drawing.Size(388, 300);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(99, 116);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 22);
-            this.textBox9.TabIndex = 8;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 125);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(36, 16);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Fiyat";
             // 
             // Form1
             // 
