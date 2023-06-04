@@ -14,8 +14,6 @@
 
 ->Ürünleri ihtiyaç halinde raflara/magaza içine gönderebileceğiz.Bunlar stok miktarından düşülecek.
 
-->Hangi ürünün kaç TL fiyatta geldiği ve çıkış fiyatı bilgisi sisteme girilecek ve Kâr/Zarar fiyatı olarak bilgi verilecek.
-
 ->Bu Projede Veri Tabanı olarak MsSQL Kullanacağım.
 
 
