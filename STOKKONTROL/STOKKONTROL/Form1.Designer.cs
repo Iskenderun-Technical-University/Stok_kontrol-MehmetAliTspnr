@@ -61,6 +61,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -196,6 +198,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -212,7 +216,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(99, 134);
+            this.button5.Location = new System.Drawing.Point(99, 144);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 23);
             this.button5.TabIndex = 7;
@@ -382,6 +386,22 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(99, 116);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 22);
+            this.textBox9.TabIndex = 8;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(31, 125);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 16);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "Fiyat";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -450,6 +470,8 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
 

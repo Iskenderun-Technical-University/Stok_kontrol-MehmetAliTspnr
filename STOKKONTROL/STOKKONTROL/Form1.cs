@@ -115,11 +115,34 @@ namespace STOKKONTROL
 
         private void button5_Click(object sender, EventArgs e)
         {//güncelle
-            Form5 f5 = new Form5();
-            f5.Show();
-           
+            //Form5 f5 = new Form5();
+           // f5.Show();
 
-       }
+            try
+            {
+                SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-IL1L0EI\SQLEXPRESS;Initial Catalog=Dbstokkontrol;Integrated Security=True");
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("UPDATE Table_Stok_Kontrol SET UrunAd=@UrunAdi, UrunFiyat=@UrunFiyat, UrunAdet=@UrunAdet WHERE Urunİd=@Urunİd", baglanti);
+                komut.Parameters.AddWithValue("@Urunİd", Convert.ToInt32(textBox4.Text));
+                komut.Parameters.AddWithValue("@UrunAdi", Convert.ToInt32(textBox5.Text));
+                komut.Parameters.AddWithValue("@UrunAdet", textBox6.Text);
+                komut.Parameters.AddWithValue("@UrunFiyat", Convert.ToInt32(textBox9.Text));
+               
+                komut.ExecuteNonQuery();
+
+            }
+            catch
+            {
+                MessageBox.Show("Bağlantı kurulurken hata oluştu!!!");
+            }
+            finally
+            {
+                baglanti.Close();
+
+            }
+
+
+        }
     
 
         private void button4_Click(object sender, EventArgs e)
